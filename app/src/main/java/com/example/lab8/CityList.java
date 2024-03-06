@@ -42,16 +42,16 @@ public class CityList {
          return cities.contains(city);
     }
 
-//    /**
-//     * Check if a city is present in the list. If it does then remove it from the list, if not then throw an exception
-//     * @param city
-//     */
-//    public void delete(City city) {
+    /**
+     * Check if a city is present in the list. If it does then remove it from the list, if not then throw an exception
+     * @param city
+     */
+    public void delete(City city) {
 //        if(!cities.contains(city)){
 //            throw new IllegalArgumentException("City not found in the list.");
 //        }
 //        cities.remove(city);
-//    }
+    }
 //
 //    /**
 //     * Return how many cities are in the list

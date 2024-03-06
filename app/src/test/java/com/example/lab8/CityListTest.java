@@ -25,4 +25,13 @@ public class CityListTest {
         assertTrue(cityList.hasCity(city));
         assertFalse(cityList.hasCity(new City("Paris", "France")));
     }
+
+    @Test
+    public void testDeleteNonCity(){
+        CityList cityList = mockCityList();
+        City edm = new City("Edmonton", "AB");
+        assertThrows( IllegalArgumentException.class, () -> {
+            cityList.delete(edm);
+        });
+    }
 }
