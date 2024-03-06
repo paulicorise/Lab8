@@ -47,18 +47,7 @@ public class CityList {
      * @param city
      */
     public void delete(City city) {
-//        if(!cities.contains(city)){
-//            throw new IllegalArgumentException("City not found in the list.");
-//        }
-//        cities.remove(city);
+
     }
-//
-//    /**
-//     * Return how many cities are in the list
-//     * @return int
-//     */
-//    public int countCities(){
-//        return cities.size();
-//    }
 
 }
