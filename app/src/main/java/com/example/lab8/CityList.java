@@ -39,7 +39,7 @@ public class CityList {
      * @return boolean
      */
     public boolean hasCity(City city) {
-        // return cities.contains(city);
+         return cities.contains(city);
     }
 
 //    /**
