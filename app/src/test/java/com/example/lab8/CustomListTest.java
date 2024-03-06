@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 //import org.junit.Before;
+import org.junit.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -65,5 +66,13 @@ public class CustomListTest {
         list.delete(edm);
         assertFalse(list.hasCity(edm));
     }
+
+    @org.junit.Test
+    public void testCountCities(){
+        list = MockCityList();
+        City city = new City("Charlottetown", "Prince Edward Island");
+        Assert.assertEquals(1, list.countCities());
+    }
+
 
 }
