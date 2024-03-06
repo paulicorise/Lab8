@@ -34,4 +34,12 @@ public class CityListTest {
             cityList.delete(edm);
         });
     }
+    @Test
+    public void testDeleteCity(){
+        CityList cityList = mockCityList();
+        City edm = new City("Edmonton", "AB");
+        cityList.add(edm);
+        cityList.delete(edm);
+        assertFalse(cityList.hasCity(edm));
+    }
 }
