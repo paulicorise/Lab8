@@ -17,6 +17,7 @@ public class CustomList extends ArrayAdapter<City> {
     private ArrayList<City> cities;
     private Context context;
 
+
     public CustomList(Context context, ArrayList<City> cities) {
         super(context, 0, cities);
         this.cities = cities;
@@ -45,12 +46,24 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+    /**
+     * this gets size of the list
+     * @return
+     */
     public int getCount(){
         return cities.size();
     }
 
+    /**
+     * this adds a city object to the list
+     *for the first phase it will be
+     empty * @param city
+     */
+
     public void addCity(City city){
 
     }
+
+
 
 }
