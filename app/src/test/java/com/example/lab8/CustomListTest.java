@@ -53,7 +53,7 @@ public class CustomListTest {
     public void testDeleteNonCity(){
         list = MockCityList();
         City edm = new City("Edmonton", "AB");
-        assertThrows( IllegalArgumentException.class, () -> {
+        assertThrows(IllegalArgumentException.class, () -> {
             list.delete(edm);
         });
     }
@@ -61,7 +61,7 @@ public class CustomListTest {
     public void testDeleteCity(){
         list = MockCityList();
         City edm = new City("Edmonton", "AB");
-        list.add(edm);
+        list.addCity(edm);
         list.delete(edm);
         assertFalse(list.hasCity(edm));
     }
